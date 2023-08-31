@@ -34,6 +34,10 @@
     @include button-size(0.75rem, 1.25rem, 1rem, 1rem, 0.75rem);
   }
 
+  &--fullwidth {
+    width: 100%;
+  }
+
   &--primary {
     background: #0072FF;
     color: #FFFFFF;
