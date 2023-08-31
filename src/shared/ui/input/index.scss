@@ -7,17 +7,18 @@
     height: 40px;
     border-radius: 5px;
     border: 1px solid #E2E8FA;
+    padding-left: 40px;
     background-color: #E2E8FA;
     color: #1C274C80;
     font-size: 14px;
     font-weight: 600;
     outline: none;
-
     &::placeholder{
       font-family: 'Nunito', sans-serif;
       font-size: 14px;
       font-weight: 600;
       color: #1C274C80;
+
     }
   }
 }
