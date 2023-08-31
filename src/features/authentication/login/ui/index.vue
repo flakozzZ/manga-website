@@ -1,15 +1,11 @@
 <script lang="ts">
 export default {
-  name: 'App'
+  name: 'Login'
 }
 </script>
-
-
 <template>
-  <div class="app">
-  </div>
-</template>
 
+</template>
 
 <script setup lang="ts">
 
