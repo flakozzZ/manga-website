@@ -4,7 +4,9 @@ export default {
 }
 </script>
 <template>
-
+  <p class="login">
+    dsafasdfas
+  </p>
 </template>
 
 <script setup lang="ts">
@@ -13,5 +15,7 @@ export default {
 
 
 <style scoped>
-
+  .login{
+    background: blue;
+  }
 </style>

@@ -1,11 +1,21 @@
+<script lang="ts">
+export default {
+  name: 'Register'
+}
+</script>
+
+<template>
+  <p class="register">
+    dsafadsfa
+  </p>
+</template>
+
 <script setup lang="ts">
 
 </script>
 
-<template>
-
-</template>
-
 <style scoped>
-
+  .register {
+    background: red;
+  }
 </style>
