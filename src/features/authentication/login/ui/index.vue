@@ -17,16 +17,16 @@ export default {
       <a-input class="login__input " placeholder="Никнейм или @mail" type="text"/>
       <a-input class="login__input " placeholder="Пароль" type="password" />
 
-      <a-button class="login__button" full-width size="md" type="quaternary">Вход</a-button>
+      <a-button class="login__button" full-width size="lg" type="primary">Вход</a-button>
     </div>
   </div>
 
 </template>
 
 <script setup lang="ts">
-
 import AButton from "../../../../shared/ui/button/index.vue";
 import AInput from "../../../../shared/ui/input/index.vue";
+
 </script>
 
 

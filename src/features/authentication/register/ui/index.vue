@@ -8,26 +8,33 @@ export default {
   <div class="register">
     <div class="register__switch">
       <router-link style="text-decoration: none" to="/auth/sign-in">
-        <a-button type="secondary" class="register__btn">Вход</a-button>
+        <a-button type="tertiary" class="register__btn">Вход</a-button>
       </router-link>
       <router-link style="text-decoration: none" to="/auth/sign-up">
-        <a-button type="tertiary" class="register__btn">Регистрация</a-button>
+        <a-button type="secondary" class="register__btn">Регистрация</a-button>
       </router-link>
     </div>
     <div class="register__item">
-      <a-input class="register__input user" placeholder="Никнейм" type="text" icon="user" />
-      <a-input class="register__input email" placeholder="e-mail" type="email" icon="email"/>
-      <a-input class="register__input password" placeholder="Пароль" type="password" />
-      <a-input class="register__input password" placeholder="Пароль" type="password" />
+      <a-input class="register__input " placeholder="Никнейм" type="text"  />
+      <a-input class="register__input " placeholder="e-mail" type="email" />
+      <a-input class="register__input " placeholder="Пароль" type="password" />
+      <a-input class="register__input " placeholder="Пароль" type="password" />
 
-      <a-button class="register__button" full-width size="md" type="quaternary">Зарегистрироваться</a-button>
+      <a-button class="register__button" full-width size="lg" type="quaternary">Зарегистрироваться</a-button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import {useRoute} from "vue-router";
+
+const route = useRoute()
+
 import AInput from "../../../../shared/ui/input/index.vue";
 import AButton from "../../../../shared/ui/button/index.vue";
+import {computed} from "vue";
+
+
 
 </script>
 
@@ -62,22 +69,6 @@ import AButton from "../../../../shared/ui/button/index.vue";
       }
 
     }
-    &__user {
-      width: 24px;
-      height: 24px;
-      background: url("../../../../shared/assets/icons/user.svg");
-    }
-    //&__email {
-    //  width: 24px;
-    //  height: 24px;
-    //  background: url("../../../../shared/assets/icons/email.svg");
-    //}
-    //&__password {
-    //  width: 24px;
-    //  height: 24px;
-    //  background: url("../../../../shared/assets/icons/password.svg");
-    //}
-
     &__button {
       margin-top: 10px;
       width: 100%;
