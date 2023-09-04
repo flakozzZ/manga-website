@@ -15,16 +15,23 @@ export default {
         autocomplete="new-password"
         :placeholder="placeholder"
     />
+  <div class="field__icon">
+    <icon :name="props.icon" class="icon" />
+  </div>
 </div>
 </template>
 
 <script setup lang="ts">
+
+  import Icon from "@/shared/ui/icon/index.vue";
+
   interface Props {
     type: 'text' | 'password' | 'email' | 'url'
     placeholder: string
     modelValue?: string | number
     disabled?: boolean
     autocomplete?: boolean
+    icon?: string
   }
 
   defineEmits<{
