@@ -1,17 +1,22 @@
-import Login from '../features/authentication/login/ui/index.vue'
-import Register from '../features/authentication/register/ui/index.vue'
-
+import Login from "./login/index.vue";
+import Register from "./register/index.vue";
+import Main from "./main/index.vue"
 
 export const routes = [
     {
+        path: '/main',
+        component: Main,
+    },
+    {
         path: '/auth/sign-in',
-        name: 'Login',
-        component: Login
+        component: Login,
     },
     {
         path: '/auth/sign-up',
-        name: 'Register',
         component: Register
     }
+
 ]
+
+
 

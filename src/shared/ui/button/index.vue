@@ -8,12 +8,12 @@ export default {
   <button
     class="a-button"
     :class="[
-        `a-button--${type}`,
-        `a-button--${size}`,
+        `a-button--${props.type}`,
+        `a-button--${props.size}`,
         {
-          'a-button--with-icon': withIcon,
-          'a-button--wide': wide,
-          'a-button--fullwidth': fullWidth,
+          'a-button--with-icon': props.withIcon,
+          'a-button--wide': props.wide,
+          'a-button--fullwidth': props.fullWidth,
         },
     ]"
   >

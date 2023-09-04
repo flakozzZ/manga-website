@@ -20,5 +20,14 @@
       color: #1C274C80;
 
     }
+
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Регулируйте отступ иконки слева */
+    transform: translateY(-40%);
+    pointer-events: none; /* Чтобы иконка не мешала взаимодействию с input */
   }
 }
