@@ -78,5 +78,13 @@ import Icon from "@/shared/ui/icon/index.vue";
 
 }
 
+@media (max-width: 768px) {
+  .register {
+    &__item {
+      width: 260px;
+    }
+  }
+}
+
 
 </style>

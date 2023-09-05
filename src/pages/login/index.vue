@@ -18,4 +18,10 @@ import SignIn from "@/features/authentication/login/ui/index.vue";
   .login-main {
     padding-top: 150px;
   }
+  
+  @media (max-width: 768px) {
+    .login-main {
+      padding-top: 0;
+    }
+  }
 </style>

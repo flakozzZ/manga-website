@@ -10,14 +10,16 @@
         <icon name="logobar" />
         <div class="navbar__logo">ATOAteam</div>
       </router-link>
-      <div class="navbar__searchbar">
-        <icon name="searchbar" />
-
+      <div class="navbar__icons">
+        <div class="navbar__userIcon">
+          <img src="../../shared/assets/icons/usericon.svg">
+        </div>
+        <div class="navbar__searchbar">
+          <icon name="searchbar" />
+        </div>
       </div>
     </div>
-
   </div>
-
 </template>
 
 <script setup lang="ts">
@@ -33,7 +35,7 @@ import Icon from "@/shared/ui/icon/index.vue";
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 20px;
 
   &__inner {
     display: flex;
@@ -64,6 +66,13 @@ import Icon from "@/shared/ui/icon/index.vue";
     text-decoration: none;
   }
 
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 20px;
+  }
+
   &__logo {
     font-family: "Red Rose", cursive;
     font-size: 20px;
@@ -71,7 +80,6 @@ import Icon from "@/shared/ui/icon/index.vue";
     margin-left: 10px;
   }
   &__searchbar {
-    margin-left: 85px;
     border: 1px solid #E2E8FA;
     border-radius: 10px;
     padding: 5px;
@@ -79,5 +87,12 @@ import Icon from "@/shared/ui/icon/index.vue";
   }
 }
 
+@media (max-width: 330px) {
+  .navbar {
+    &__searchbar {
+      display: none;
+    }
+  }
+}
 
 </style>
