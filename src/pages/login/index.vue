@@ -7,6 +7,7 @@ export default {
 <template>
   <div class="login-main">
     <sign-in />
+
   </div>
 </template>
 
@@ -17,5 +18,11 @@ import SignIn from "@/features/authentication/login/ui/index.vue";
 <style scoped>
   .login-main {
     padding-top: 150px;
+  }
+  
+  @media (max-width: 768px) {
+    .login-main {
+      padding-top: 0;
+    }
   }
 </style>

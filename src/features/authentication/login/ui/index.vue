@@ -95,4 +95,12 @@ import Icon from "@/shared/ui/icon/index.vue";
     font-family: 'Nunito', sans-serif;
   }
 }
+
+@media (max-width: 768px) {
+  .login {
+    &__item {
+      width: 260px;
+    }
+  }
+}
 </style>

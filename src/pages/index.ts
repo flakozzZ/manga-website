@@ -4,6 +4,10 @@ import Main from "./main/index.vue"
 
 export const routes = [
     {
+        path: '/',
+        redirect: '/main'
+    },
+    {
         path: '/main',
         component: Main,
     },

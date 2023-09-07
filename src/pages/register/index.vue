@@ -21,4 +21,10 @@ import SignUp from "@/features/authentication/register/ui/index.vue";
   .register-main {
     padding-top: 150px;
   }
+
+  @media (max-width: 768px) {
+    .register-main {
+      padding-top: 0;
+    }
+  }
 </style>
