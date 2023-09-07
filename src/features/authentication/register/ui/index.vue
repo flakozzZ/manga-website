@@ -17,11 +17,41 @@ export default {
     </div>
     <div class="register__item">
       <form>
-        <a-input class="register__input " placeholder="Никнейм" type="text" icon="user"/>
-        <a-input class="register__input " placeholder="e-mail" type="email" icon="email"/>
-        <a-input class="register__input " placeholder="Пароль" type="password" icon="password"/>
-        <a-input class="register__input " placeholder="Пароль" type="password" icon="password"/>
-        <a-button class="register__button" full-width size="lg" type="quaternary">Зарегистрироваться</a-button>
+        <a-input
+            v-model="formData.nickname"
+            class="register__input"
+            placeholder="Никнейм"
+            type="text"
+            icon="user"
+        />
+        <a-input
+            v-model="formData.email"
+            class="register__input"
+            placeholder="e-mail"
+            type="email"
+            icon="email"
+        />
+        <a-input
+            v-model="formData.password"
+            class="register__input"
+            placeholder="Пароль"
+            type="password"
+            icon="password"
+        />
+        <a-input
+            v-model="formData.confirmPassword"
+            class="register__input"
+            placeholder="Пароль"
+            type="password"
+            icon="password"
+        />
+        <a-button
+            class="register__button"
+            full-width size="lg"
+            type="quaternary"
+        >
+          Зарегистрироваться
+        </a-button>
       </form>
     </div>
   </div>
@@ -31,7 +61,15 @@ export default {
 import AButton from "@/shared/ui/button/index.vue";
 import AInput from "@/shared/ui/input/index.vue";
 import Icon from "@/shared/ui/icon/index.vue";
+import {reactive} from "vue";
 
+const formData = reactive({
+  nickname: '',
+  email: '',
+  password: '',
+  confirmPassword: '',
+
+})
 
 </script>
 

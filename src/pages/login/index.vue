@@ -7,6 +7,7 @@ export default {
 <template>
   <div class="login-main">
     <sign-in />
+
   </div>
 </template>
 

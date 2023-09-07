@@ -12,7 +12,7 @@
       </router-link>
       <div class="navbar__icons">
         <div class="navbar__userIcon">
-          <img src="../../shared/assets/icons/usericon.svg">
+          <img src="../../shared/assets/icons/usericon.svg" alt="logo">
         </div>
         <div class="navbar__searchbar">
           <icon name="searchbar" />
