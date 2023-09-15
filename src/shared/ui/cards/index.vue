@@ -35,10 +35,10 @@ withDefaults(defineProps<Props>(), {})
 
 <style scoped lang="scss">
 .card {
-  width: 765px;
+  width: 100%;
+  max-width: 745px;
   display: flex;
-  gap: 5px;
-
+  grid-gap: 5px;
   &__title {
     font-size: 14px;
     font-weight: 500;

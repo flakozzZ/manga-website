@@ -51,8 +51,6 @@ const card = [
 </script>
 <style scoped lang="scss">
 .main-release {
-  display: flex;
-  flex-direction: column;
 }
 .main__releases {
   margin: 47px 0 23px 0;
