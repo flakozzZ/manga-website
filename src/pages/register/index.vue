@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div class="register-main">
-    <sign-up />
+    <sign-up/>
   </div>
 </template>
 
@@ -18,13 +18,13 @@ import SignUp from "@/features/authentication/register/ui/index.vue";
 
 
 <style scoped>
-  .register-main {
-    padding-top: 150px;
-  }
+.register-main {
+  padding-top: 150px;
+}
 
-  @media (max-width: 768px) {
-    .register-main {
-      padding-top: 0;
-    }
+@media (max-width: 768px) {
+  .register-main {
+    padding-top: 0;
   }
+}
 </style>

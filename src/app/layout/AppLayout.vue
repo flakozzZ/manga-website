@@ -7,15 +7,15 @@
         <div class="navbar__line"></div>
       </div>
       <router-link class="navbar__logoItem" to="/main">
-        <icon name="logobar" />
+        <icon name="logobar"/>
         <div class="navbar__logo">ATOAteam</div>
       </router-link>
       <div class="navbar__icons">
         <div class="navbar__userIcon">
-          <img src="../../shared/assets/icons/usericon.svg" alt="logo">
+          <img src="../../shared/assets/img/usericon.svg" alt="logo">
         </div>
         <div class="navbar__searchbar">
-          <icon name="searchbar" />
+          <icon name="searchbar"/>
         </div>
       </div>
     </div>
@@ -42,6 +42,7 @@ import Icon from "@/shared/ui/icon/index.vue";
     align-items: center;
     width: 300px;
   }
+
   &__lines {
     cursor: pointer;
   }
@@ -52,14 +53,17 @@ import Icon from "@/shared/ui/icon/index.vue";
     margin-bottom: 3px; /* Расстояние между линиями, здесь 2px */
     background: #1C274C;
     border-radius: 10px;
+
     &:first-child {
       width: 18.6px;
 
     }
+
     &:last-child {
       width: 10.8px;
     }
   }
+
   &__logoItem {
     display: flex;
     margin-left: 20px;
@@ -79,6 +83,7 @@ import Icon from "@/shared/ui/icon/index.vue";
     color: #1C274C;
     margin-left: 10px;
   }
+
   &__searchbar {
     border: 1px solid #E2E8FA;
     border-radius: 10px;

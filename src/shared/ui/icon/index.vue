@@ -3,18 +3,23 @@ export default {
   name: 'Icon'
 }
 </script>
-  <template>
-    <component :is="getSvg" />
-  </template>
+<template>
+  <component :is="getSvg"/>
+</template>
 
 <script setup lang="ts">
 import {createSvgMap} from "@/shared/ui/icon/index.ts";
 import {computed, h} from "vue";
 
-const { name } = defineProps(["name"]);
+interface Props {
+  name: string
+}
+
+const props = withDefaults(defineProps<Props>(), {})
+
 
 const getSvg = computed(() => {
-  const svg = createSvgMap().get(name);
+  const svg = createSvgMap().get(props.name);
   return svg && h(svg);
 });
 </script>

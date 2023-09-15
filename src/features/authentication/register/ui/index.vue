@@ -16,7 +16,7 @@ export default {
       </router-link>
     </div>
     <div class="register__item">
-      <form>
+      <form @submit.prevent="submitForm">
         <a-input
             v-model="formData.nickname"
             class="register__input"
@@ -61,7 +61,10 @@ export default {
 import AButton from "@/shared/ui/button/index.vue";
 import AInput from "@/shared/ui/input/index.vue";
 import Icon from "@/shared/ui/icon/index.vue";
+import useVuelidate from "@vuelidate/core";
+import {required, email} from "@vuelidate/validators";
 import {reactive} from "vue";
+import {log} from "util";
 
 const formData = reactive({
   nickname: '',
@@ -71,6 +74,20 @@ const formData = reactive({
 
 })
 
+const rules = {
+  nickname: {required},
+  email: {required, email},
+  password: {required},
+  confirmPassword: {required},
+}
+
+const v$ = useVuelidate(rules, formData);
+
+const submitForm = () => {
+  alert('Form is succefully')
+}
+
+
 </script>
 
 <style scoped lang="scss">
@@ -79,6 +96,7 @@ const formData = reactive({
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &__logo {
     margin-bottom: 18px;
   }

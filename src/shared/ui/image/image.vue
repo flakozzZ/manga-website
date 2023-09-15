@@ -57,7 +57,9 @@ interface Props {
   viewer: string,
 }
 
-const props = withDefaults(defineProps<Props>(), {})
+const props = withDefaults(defineProps<Props>(), {
+
+})
 
 
 </script>
@@ -75,16 +77,23 @@ const props = withDefaults(defineProps<Props>(), {})
     bottom: 20px;
     left: 55px;
   }
-
+  &__enName {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
 
   &__ruName {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
     margin: 10px 0 20px 0;
   }
 
 
   &__text {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     left: 220px;
@@ -98,6 +107,8 @@ const props = withDefaults(defineProps<Props>(), {})
     display: flex;
     align-items: center;
     gap: 30px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12px;
 
   }
   &__feature {
