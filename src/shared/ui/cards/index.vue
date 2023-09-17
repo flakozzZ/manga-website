@@ -8,9 +8,11 @@ export default {
 <template>
   <div class="card">
     <template v-for="card in cards" :key="card.key">
-      <div class="card__img">
+      <div class="card__item">
         <slot :name="card.key">
           <img :src="card.url" alt="title">
+        </slot>
+        <slot :name="card.key">
           <span class="card__title">{{ card.label }}</span>
         </slot>
       </div>
@@ -35,8 +37,6 @@ withDefaults(defineProps<Props>(), {})
 
 <style scoped lang="scss">
 .card {
-  width: 100%;
-  max-width: 745px;
   display: flex;
   grid-gap: 5px;
   &__title {
@@ -45,6 +45,12 @@ withDefaults(defineProps<Props>(), {})
     color: #000000;
     font-family: 'Exo 2', sans-serif;
     margin-top: 5px;
+  }
+  &__item {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 

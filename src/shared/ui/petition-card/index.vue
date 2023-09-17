@@ -74,7 +74,7 @@ withDefaults(defineProps<Props>(), {})
     flex-direction: column;
   }
   &__title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
 
@@ -82,10 +82,11 @@ withDefaults(defineProps<Props>(), {})
   &__types {
     display: flex;
     gap: 5px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     justify-content: center;
     margin-top: 13px;
+
 
   }
   &__type {
@@ -99,6 +100,7 @@ withDefaults(defineProps<Props>(), {})
     flex-direction: column;
     gap: 12px;
     font-weight: 700;
+    font-size: 14px;
     margin: 15px 0;
   }
   &__format {

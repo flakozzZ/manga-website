@@ -11,6 +11,8 @@ export default {
       <release-cards/>
       <petitions />
     </div>
+    <title-card />
+    <new-releases />
   </div>
 
 </template>
@@ -19,6 +21,8 @@ export default {
 import MainImage from "@/features/main-image/ui/index.vue";
 import ReleaseCards from "@/features/release-cards/ui/index.vue";
 import Petitions from "@/features/petition/ui/index.vue";
+import TitleCard from "@/features/title-card/ui/index.vue";
+import NewReleases from "@/features/new-releases/ui/index.vue";
 
 
 </script>
