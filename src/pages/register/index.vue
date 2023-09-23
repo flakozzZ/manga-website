@@ -13,7 +13,7 @@ export default {
 
 
 <script setup lang="ts">
-import SignUp from "@/features/authentication/register/ui/index.vue";
+import SignUp from "@/widgets/authentication/register/ui/index.vue";
 </script>
 
 

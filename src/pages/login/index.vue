@@ -12,7 +12,7 @@ export default {
 </template>
 
 <script setup lang="ts">
-import SignIn from "@/features/authentication/login/ui/index.vue";
+import SignIn from "@/widgets/authentication/login/ui/index.vue";
 </script>
 
 <style scoped>

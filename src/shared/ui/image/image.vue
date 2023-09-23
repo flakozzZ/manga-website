@@ -64,58 +64,6 @@ const props = withDefaults(defineProps<Props>(), {
 
 </script>
 
-<style scoped lang="scss">
-.image {
-  position: relative;
-  &__background {
-    position: relative;
-  }
-  &__foreground {
-    position: absolute;
-    display: flex;
-    top: 75px;
-    bottom: 20px;
-    left: 55px;
-  }
-  &__enName {
-    font-family: 'Exo', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-  }
+<style scoped src="./index.scss">
 
-  &__ruName {
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Exo 2', sans-serif;
-    margin: 10px 0 20px 0;
-  }
-
-
-  &__text {
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    left: 220px;
-    width: 485px;
-    height: 120px;
-    color: #FFFFFF;
-    font-weight: 700;
-  }
-
-  &__features {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    font-family: 'Public Sans', sans-serif;
-    font-size: 12px;
-
-  }
-  &__feature {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-
-}
 </style>

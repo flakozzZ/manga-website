@@ -59,60 +59,6 @@ interface Props {
 withDefaults(defineProps<Props>(), {})
 </script>
 
-<style scoped lang="scss">
-.table {
-  width: 1250px;
-  height: 500px;
-  background: #E2E8FA;
-  border-radius: 5px;
+<style scoped src="./index.scss">
 
-  &__titles {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    padding: 10px;
-  }
-
-  &__items {
-    width: 383px;
-    display: flex;
-    gap: 10px;
-    padding-bottom: 15px;
-  }
-  &__title {
-    color: #1C274C;
-    font-size: 16px;
-    font-weight: 900;
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 5px;
-  }
-  &__chapters {
-    display: flex;
-    gap: 5px;
-    font-weight: 500;
-    font-size: 14px;
-    font-family: 'Nunito', sans-serif;
-    color: #1C274C;
-    margin-bottom: 5px;
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: #1C274C;
-    font-family: 'Nunito', sans-serif;
-
-  }
-  &__team {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-weight: 700;
-  }
-  &__time {
-    font-weight: 500;
-  }
-}
 </style>

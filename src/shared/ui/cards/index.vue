@@ -35,23 +35,7 @@ interface Props {
 withDefaults(defineProps<Props>(), {})
 </script>
 
-<style scoped lang="scss">
-.card {
-  display: flex;
-  grid-gap: 5px;
-  &__title {
-    font-size: 14px;
-    font-weight: 500;
-    color: #000000;
-    font-family: 'Exo 2', sans-serif;
-    margin-top: 5px;
-  }
-  &__item {
-    width: 120px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
+<style scoped src="./index.scss">
+
 
 </style>
