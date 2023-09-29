@@ -16,30 +16,26 @@ export default {
       </router-link>
     </div>
     <div class="register__item">
-      <form @submit.prevent="submitForm">
+      <form @submit.prevent>
         <a-input
-            v-model="formData.nickname"
             class="register__input"
             placeholder="Никнейм"
             type="text"
             icon="user"
         />
         <a-input
-            v-model="formData.email"
             class="register__input"
             placeholder="e-mail"
             type="email"
             icon="email"
         />
         <a-input
-            v-model="formData.password"
             class="register__input"
             placeholder="Пароль"
             type="password"
             icon="password"
         />
         <a-input
-            v-model="formData.confirmPassword"
             class="register__input"
             placeholder="Пароль"
             type="password"
@@ -65,28 +61,6 @@ import useVuelidate from "@vuelidate/core";
 import {required, email} from "@vuelidate/validators";
 import {reactive} from "vue";
 import {log} from "util";
-
-const formData = reactive({
-  nickname: '',
-  email: '',
-  password: '',
-  confirmPassword: '',
-
-})
-
-const rules = {
-  nickname: {required},
-  email: {required, email},
-  password: {required},
-  confirmPassword: {required},
-}
-
-const v$ = useVuelidate(rules, formData);
-
-const submitForm = () => {
-  alert('Form is succefully')
-}
-
 
 </script>
 
