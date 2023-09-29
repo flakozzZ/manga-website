@@ -9,7 +9,7 @@ export default {
     <main-image/>
     <div class="main__block">
       <release-cards/>
-      <petitions />
+      <petitions class="main__petition" />
     </div>
     <title-card />
     <new-releases />
@@ -35,6 +35,9 @@ import NewReleases from "@/widgets/new-releases/ui/index.vue";
   &__block {
     display: flex;
     justify-content: space-between;
+  }
+  &__petition {
+    margin-right: 40px;
   }
 
 

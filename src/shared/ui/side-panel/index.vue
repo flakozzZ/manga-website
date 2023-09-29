@@ -7,25 +7,26 @@ export default {
 <template>
   <Transition>
     <div class="side-panel">
-        <slot name="header">
-          <icon name="close"/>
-        </slot>
-      <slot name="default">
-        sdsadsa
-      </slot>
-      <slot name="footer">
-        dsafdsa
-      </slot>
+
     </div>
   </Transition>
 </template>
 
 <script setup lang="ts">
+interface Props {
 
-import Icon from "@/shared/ui/icon/index.vue";
+}
+
+
+const props = withDefaults(defineProps<Props>(), {
+
+})
+
 </script>
 
 
 <style scoped src="./index.scss">
 
 </style>
+
+
