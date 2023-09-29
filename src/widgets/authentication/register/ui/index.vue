@@ -16,30 +16,26 @@ export default {
       </router-link>
     </div>
     <div class="register__item">
-      <form>
+      <form @submit.prevent>
         <a-input
-            v-model="formData.nickname"
             class="register__input"
             placeholder="Никнейм"
             type="text"
             icon="user"
         />
         <a-input
-            v-model="formData.email"
             class="register__input"
             placeholder="e-mail"
             type="email"
             icon="email"
         />
         <a-input
-            v-model="formData.password"
             class="register__input"
             placeholder="Пароль"
             type="password"
             icon="password"
         />
         <a-input
-            v-model="formData.confirmPassword"
             class="register__input"
             placeholder="Пароль"
             type="password"
@@ -61,15 +57,10 @@ export default {
 import AButton from "@/shared/ui/button/index.vue";
 import AInput from "@/shared/ui/input/index.vue";
 import Icon from "@/shared/ui/icon/index.vue";
+import useVuelidate from "@vuelidate/core";
+import {required, email} from "@vuelidate/validators";
 import {reactive} from "vue";
-
-const formData = reactive({
-  nickname: '',
-  email: '',
-  password: '',
-  confirmPassword: '',
-
-})
+import {log} from "util";
 
 </script>
 
@@ -79,6 +70,7 @@ const formData = reactive({
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &__logo {
     margin-bottom: 18px;
   }

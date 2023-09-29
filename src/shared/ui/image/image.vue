@@ -57,54 +57,13 @@ interface Props {
   viewer: string,
 }
 
-const props = withDefaults(defineProps<Props>(), {})
+const props = withDefaults(defineProps<Props>(), {
+
+})
 
 
 </script>
 
-<style scoped lang="scss">
-.image {
-  position: relative;
-  &__background {
-    position: relative;
-  }
-  &__foreground {
-    position: absolute;
-    display: flex;
-    top: 75px;
-    bottom: 20px;
-    left: 55px;
-  }
+<style scoped src="./index.scss">
 
-
-  &__ruName {
-    margin: 10px 0 20px 0;
-  }
-
-
-  &__text {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    left: 220px;
-    width: 485px;
-    height: 120px;
-    color: #FFFFFF;
-    font-weight: 700;
-  }
-
-  &__features {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-  }
-  &__feature {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-
-}
 </style>

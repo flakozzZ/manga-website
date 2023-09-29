@@ -1,0 +1,53 @@
+.petition{
+  color: #1C274C;
+  font-family: "Exo 2", sans-serif;
+
+
+  &__items{
+    display: flex;
+    gap: 10px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+  }
+  &__types {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 13px;
+
+
+  }
+  &__type {
+    border-radius: 7px;
+    padding: 5px 10px 7px;
+    background: #E2E8FA;
+
+  }
+  &__time {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  &__format {
+    display: flex;
+    gap: 35px;
+  }
+  &__chapter{
+    display: flex;
+    justify-content: space-between;
+  }
+}

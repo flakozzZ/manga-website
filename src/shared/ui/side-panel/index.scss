@@ -1,0 +1,11 @@
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  z-index: 9998;
+  height: 881px;
+  top: 15px;
+  left: 100px;
+  position: fixed;
+  background: aqua;
+}

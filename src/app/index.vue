@@ -22,5 +22,4 @@ import AppLayout from "@/app/layout/AppLayout.vue";
 
 
 <style scoped>
-
 </style>

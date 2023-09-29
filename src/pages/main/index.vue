@@ -6,31 +6,40 @@ export default {
 </script>
 <template>
   <div class="main">
-    <Image
-        ru-name="Магическая битва"
-        :background="backgroundImage"
-        en-name="Jujutsu Kaisen"
-        :foreground="foregroundImage"
-        read="32.2k"
-        likes="132.2k"
-        favorites="9.3(12.2k)"
-        viewer="3.2m"
-
-    />
+    <main-image/>
+    <div class="main__block">
+      <release-cards/>
+      <petitions class="main__petition" />
+    </div>
+    <title-card />
+    <new-releases />
   </div>
+
 </template>
 
 <script setup lang="ts">
-import Image from "@/shared/ui/image/image.vue";
+import MainImage from "@/widgets/main-image/ui/index.vue";
+import ReleaseCards from "@/widgets/release-cards/ui/index.vue";
+import Petitions from "@/widgets/petition/ui/index.vue";
+import TitleCard from "@/widgets/title-card/ui/index.vue";
+import NewReleases from "@/widgets/new-releases/ui/index.vue";
 
-const backgroundImage = new URL('@/shared/assets/icons/backgroundLogo.svg', import.meta.url)
-const foregroundImage = new URL('@/shared/assets/icons/foregroundLogo.svg', import.meta.url)
+
 </script>
 
-<style scoped>
-  .main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+<style scoped lang="scss">
+.main {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  &__block {
+    display: flex;
+    justify-content: space-between;
   }
+  &__petition {
+    margin-right: 40px;
+  }
+
+
+}
 </style>
