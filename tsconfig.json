@@ -5,7 +5,7 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
+    "composite": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -23,8 +23,6 @@
   "include": ["@/**/*.ts", "@/**/*.d.ts", "@/**/*.tsx", "@/**/*.vue"],
   "references": [
     { "path": "./tsconfig.node.json" },
-    { "path": "./versel.json",
-      "composite": true
-    }
+    { "path": "./versel.json",}
   ]
 }
