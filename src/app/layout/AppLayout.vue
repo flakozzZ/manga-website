@@ -25,9 +25,7 @@
 <script setup lang="ts">
 
 import Icon from "@/shared/ui/icon/index.vue";
-import SidePanel from "@/shared/ui/side-panel/index.vue";
 import {ref} from "vue";
-import AInput from "@/shared/ui/input/index.vue";
 
 const isOpened = ref<boolean>(false)
 const openInput = ref(false)
