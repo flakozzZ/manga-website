@@ -17,7 +17,7 @@ import TitleTable from "@/shared/ui/title-table/index.vue";
 
 const table = [
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -28,7 +28,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/oshinokoTitle.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/oshinoko.png', import.meta.url),
     key: 'Child of Idol',
     title: 'Звездное дитя',
     tome: 'Том 12',
@@ -39,7 +39,7 @@ const table = [
     time: '41 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/bluelockTitle.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/bluelock.png', import.meta.url),
     key: 'Blue Lock',
     title: 'Синяя Тюрьма: Блю-Лок',
     tome: 'Том 22',
@@ -50,7 +50,7 @@ const table = [
     time: '59 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/ragrarcrimsonTitle.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/ragnarcrimson.png', import.meta.url),
     key: 'Ragnar Crimson',
     title: 'Рагна Багровый',
     tome: 'Том 11',
@@ -61,7 +61,7 @@ const table = [
     time: '1 час назад'
   },
   {
-    url: new URL('@/shared/assets/img/dgraymanTitle.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/dgrayman.png', import.meta.url),
     key: 'D.Gray-man',
     title: 'D.Dray-man',
     tome: 'Том 29',
@@ -72,7 +72,7 @@ const table = [
     time: '1 час назад'
   },
   {
-    url: new URL('@/shared/assets/img/heroacademyTitle.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/myheroacademy.png', import.meta.url),
     key: 'My Hero Academy',
     title: 'Моя геройская академия',
     tome: 'Том 22',
@@ -83,7 +83,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -94,7 +94,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -105,7 +105,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -116,7 +116,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -127,7 +127,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -138,7 +138,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -149,7 +149,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -160,7 +160,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',
@@ -171,7 +171,7 @@ const table = [
     time: '39 минут назад'
   },
   {
-    url: new URL('@/shared/assets/img/titleJujutsu.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url),
     key: 'Jujutsu Kaisen',
     title: 'Магическая битва',
     tome: 'Том 22',

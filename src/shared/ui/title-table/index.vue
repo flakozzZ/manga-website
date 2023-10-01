@@ -10,7 +10,7 @@ export default {
       <template v-for="item in table" :key="item.key">
         <div class="table__items">
           <div class="table__img">
-            <img :src="item.url" alt="">
+            <img class="table__img" :src="item.url" alt="">
           </div>
           <div class="table__info">
             <div class="table__title">

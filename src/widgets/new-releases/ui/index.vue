@@ -19,42 +19,42 @@ const releases = [
   {
     key: 'D.Gray-Man',
     label: 'D.Gray-man',
-    url: new URL('@/shared/assets/img/dGrayMan.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/dgrayman.png', import.meta.url),
   },
   {
     key: 'Blue Lock',
     label: 'Синяя Тюрьма: Блю Лок',
-    url: new URL('@/shared/assets/img/blueLock.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/bluelock.png', import.meta.url)
   },
   {
     key: 'Jujutsu Kaisen',
     label: 'Магическая Битва',
-    url: new URL('@/shared/assets/img/jujutsuKaisen.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url)
   },
   {
     key: 'My Hero Academy',
     label: 'Моя геройская Академия',
-    url: new URL('@/shared/assets/img/myHeroAcademy.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/myheroacademy.png', import.meta.url)
   },
   {
     key: 'Ragnar Crimson',
     label: 'Рагна Багровый',
-    url: new URL('@/shared/assets/img/ragnarCrimson.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/ragnarcrimson.png', import.meta.url)
   },
   {
     key: 'My Hero Academy',
     label: 'Моя геройская Академия',
-    url: new URL('@/shared/assets/img/myHeroAcademy.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/myheroacademy.png', import.meta.url)
   },
   {
     key: 'Ragnar Crimson',
     label: 'Рагна Багровый',
-    url: new URL('@/shared/assets/img/ragnarCrimson.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/ragnarcrimson.png', import.meta.url)
   },
   {
     key: 'My Hero Academy',
     label: 'Моя геройская Академия',
-    url: new URL('@/shared/assets/img/myHeroAcademy.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/myheroacademy.png', import.meta.url)
   },
 ]
 </script>

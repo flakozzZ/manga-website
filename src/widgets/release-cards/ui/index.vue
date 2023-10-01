@@ -20,38 +20,36 @@ const card = [
   {
     key: 'D.Gray-Man',
     label: 'D.Gray-man',
-    url: new URL('@/shared/assets/img/dGrayMan.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/dgrayman.png', import.meta.url),
   },
   {
     key: 'Blue Lock',
     label: 'Синяя Тюрьма: Блю Лок',
-    url: new URL('@/shared/assets/img/blueLock.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/bluelock.png', import.meta.url)
   },
   {
     key: 'Jujutsu Kaisen',
     label: 'Магическая Битва',
-    url: new URL('@/shared/assets/img/jujutsuKaisen.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url)
   },
   {
     key: 'Ragnar Crimson',
     label: 'Рагна Багровый',
-    url: new URL('@/shared/assets/img/ragnarCrimson.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/ragnarcrimson.png', import.meta.url)
   },
   {
     key: 'My Hero Academy',
     label: 'Моя геройская Академия',
-    url: new URL('@/shared/assets/img/myHeroAcademy.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/myheroacademy.png', import.meta.url)
   },
   {
     key: 'Child of Idol',
     label: 'Звездное дитя',
-    url: new URL('@/shared/assets/img/oshinoko.svg', import.meta.url)
+    url: new URL('@/shared/assets/img/oshinoko.png', import.meta.url)
   },
 ]
 </script>
 <style scoped lang="scss">
-.main-release {
-}
 .main__releases {
   margin: 47px 0 23px 0;
 }

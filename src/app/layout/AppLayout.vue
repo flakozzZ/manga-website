@@ -12,7 +12,7 @@
       </router-link>
       <div class="navbar__icons">
         <div class="navbar__userIcon">
-          <img src="../../shared/assets/img/usericon.svg" alt="logo">
+          <img src="../../shared/assets/img/user.png" alt="logo">
         </div>
         <div class="navbar__searchbar" @click="inputValue">
           <icon name="searchbar"/>
