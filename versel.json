@@ -1,10 +1,20 @@
-
-
 {
-  "compilerOptions": {
-    "composite": true
-  },
-    "rewrites":  [
-    {"source": "/(.*)", "destination": "/"}
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+     "src": "/main",
+      "dest": "/"
+    },
+    {
+     "src": "/auth/sign-in",
+      "dest": "/"
+    },
+    {
+     "src": "/auth/sign-up",
+      "dest": "/"
+    }
   ]
 }
