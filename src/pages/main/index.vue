@@ -9,6 +9,7 @@ export default {
     <main-image/>
     <div class="main__block">
       <router-link to="auth/sign-in">Signin</router-link>
+      <router-link to="auth/sign-up">Signup</router-link>
       <release-cards/>
       <petitions class="main__petition" />
     </div>
