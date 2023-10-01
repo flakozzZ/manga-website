@@ -10,7 +10,7 @@ export default {
     <template v-for="card in cards" :key="card.key">
       <div class="card__item">
         <slot :name="card.key">
-          <img :src="card.url" alt="title">
+          <img class="card__img" :src="card.url" alt="title">
         </slot>
         <slot :name="card.key">
           <span class="card__title">{{ card.label }}</span>

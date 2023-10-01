@@ -20,7 +20,7 @@ import PetitionCard from "@/shared/ui/petition-card/index.vue";
 const petition = [
   {
     key: 'Ragnar Crimson',
-    url: new URL('@/shared/assets/img/ragnarCrimson.svg', import.meta.url),
+    url: new URL('@/shared/assets/img/ragnarcrimson.png', import.meta.url),
     name: 'Рагна Багровый',
     type: ['Манга', 'Выпускается', "2023"],
     format: 'еженедельник',
