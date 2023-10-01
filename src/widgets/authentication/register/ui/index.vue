@@ -57,10 +57,6 @@ export default {
 import AButton from "@/shared/ui/button/index.vue";
 import AInput from "@/shared/ui/input/index.vue";
 import Icon from "@/shared/ui/icon/index.vue";
-import useVuelidate from "@vuelidate/core";
-import {required, email} from "@vuelidate/validators";
-import {reactive} from "vue";
-import {log} from "util";
 
 </script>
 

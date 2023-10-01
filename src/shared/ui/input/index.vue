@@ -9,7 +9,6 @@ export default {
     <input
         :type="inputType"
         :value="modelValue"
-        @input="$emit('update:modelValue', $event.target.value)"
         class="field__input"
         :disabled="disabled"
         autocomplete="new-password"

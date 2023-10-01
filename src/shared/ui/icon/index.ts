@@ -1,10 +1,10 @@
 export function createSvgMap() {
-    function getSvgNameFromPath(path) {
+    function getSvgNameFromPath(path: any ){
         const pathSplit = path.split('/');
         const fileName = pathSplit[pathSplit.length - 1] || '';
-        const svgName = fileName.replace('.svg', '');
+        const svgNameIcon = fileName.replace('.svg', '');
 
-        return svgName;
+        return svgNameIcon;
     }
 
     const modules = import.meta.glob('@/shared/assets/icons/**/*.svg', {

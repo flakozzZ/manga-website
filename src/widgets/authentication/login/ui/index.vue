@@ -28,13 +28,13 @@ export default {
       </router-link>
     </div>
   </div>
-
 </template>
 
 <script setup lang="ts">
-import AButton from "../../../../shared/ui/button/index.vue";
-import AInput from "../../../../shared/ui/input/index.vue";
+
 import Icon from "@/shared/ui/icon/index.vue";
+import AButton from "@/shared/ui/button/index.vue";
+import AInput from "@/shared/ui/input/index.vue";
 
 </script>
 
