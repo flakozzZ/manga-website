@@ -1,4 +1,6 @@
-
+import Register from "@/pages/register/index.vue";
+import Login from "@/pages/login/index.vue";
+import Main from "@/pages/main/index.vue";
 export const routes = [
     {
         path: '/',
@@ -6,15 +8,15 @@ export const routes = [
     },
     {
         path: '/main',
-        component: import('./main/index.vue'),
+        component: Main,
     },
     {
         path: '/auth/sign-in',
-        component: import('./login/index.vue'),
+        component: Login,
     },
     {
         path: '/auth/sign-up',
-        component: import('./register/index.vue')
+        component: Register,
     }
 
 ]
