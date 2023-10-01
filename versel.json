@@ -1,19 +1,19 @@
 {
   "rewrites": [
     {
-      "source": "^/main/.*$",
+      "source": "/main",
       "destination": "/main/index.html"
     },
     {
-      "source": "^/auth/sign-in/.*$",
+      "source": "/auth/sign-in/",
       "destination": "/auth/sign-in/index.html"
     },
     {
-      "source": "^/auth/sign-up/.*$",
+      "source": "/auth/sign-up/",
       "destination": "/auth/sign-up/index.html"
     },
     {
-      "source": ".*",
+      "source": "*",
       "destination": "/index.html"
     }
   ]
