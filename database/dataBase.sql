@@ -18,7 +18,7 @@ CREATE TABLE team_members(
     team_id INTEGER,
     user_id INTEGER,
     FOREIGN KEY (team_id) REFERENCES teams (team_id),
-    FOREIGN KEY (book_id) REFERENCES books (book_id)
+    FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
 
 CREATE TABLE books(
@@ -32,7 +32,6 @@ CREATE TABLE books(
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
 CREATE TABLE book_chapters(
     book_chapter_id SERIAL PRIMARY KEY,
     book_id INTEGER,
@@ -62,7 +61,7 @@ CREATE TABLE book_comments(
 
 CREATE TABLE tags(
     tag_id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
+    name VARCHAR(255) UNIQUE
 );
 
 CREATE TABLE book_tags(
@@ -74,12 +73,54 @@ CREATE TABLE book_tags(
 
 CREATE TABLE genres(
     genre_id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
+    name VARCHAR(255) UNIQUE
 );
 
 CREATE TABLE book_genres(
     genre_id INTEGER,
     book_id INTEGER,
     FOREIGN KEY (genre_id) REFERENCES genres (genre_id),
+    FOREIGN KEY (book_id) REFERENCES books (book_id)
+);
+
+CREATE TABLE page_comments (
+    comment_id SERIAL PRIMARY KEY,
+    user_id INTEGER,
+    book_page_id INTEGER,
+    text VARCHAR(1000),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users (user_id),
+    FOREIGN KEY (book_page_id) REFERENCES book_pages (book_page_id)
+);
+
+CREATE TABLE reading_progress (
+    reading_id SERIAL PRIMARY KEY,
+    user_id INTEGER,
+    book_id INTEGER,
+    book_chapter_id INTEGER,
+    book_page_id INTEGER,
+    status VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users (user_id),
+    FOREIGN KEY (book_id) REFERENCES books (book_id),
+    FOREIGN KEY (book_chapter_id) REFERENCES book_chapters (book_chapter_id),
+    FOREIGN KEY (book_page_id) REFERENCES book_pages (book_page_id)
+);
+
+CREATE TABLE comment_likes(
+    comment_like_id SERIAL PRIMARY KEY,
+    user_id INTEGER,
+    comment_id INTEGER,
+	like_dislike BOOL,
+    FOREIGN KEY (user_id) REFERENCES users (user_id),
+    FOREIGN KEY (comment_id) REFERENCES book_comments (book_comment_id)
+);
+
+CREATE TABLE book_likes(
+    book_like_id SERIAL PRIMARY KEY,
+    user_id INTEGER,
+    book_id INTEGER,
+	like_dislike BOOL,
+    FOREIGN KEY (user_id) REFERENCES users (user_id),
     FOREIGN KEY (book_id) REFERENCES books (book_id)
 );
