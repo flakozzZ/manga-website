@@ -80,10 +80,10 @@ SELECT books.title
     JOIN books on book_genres.genre_id = books.book_id
     WHERE book_genres.genre_id = (SELECT genre_id FROM genres WHERE name = 'yuri')
 
-SELECT public.books.title, public.book_comments.text, public.users.username as name
+SELECT public.users.username as name
 	FROM public.team_members
 	JOIN public.users ON public.team_members.user_id = public.users.user_id
+	JOIN public.teams ON public.team_members.team_id = public.teams.team_id
 	WHERE public.teams.team_id = (SELECT teams.team_id
 								 FROM teams
-								 WHERE title = 'Oshi no ko')
-	ORDER BY books.title
+								 WHERE title = 'AtoaTeam')
