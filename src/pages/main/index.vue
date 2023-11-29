@@ -17,12 +17,9 @@ export default {
 </template>
 
 <script setup lang="ts">
-import MainImage from "@/widgets/main-image/ui/index.vue";
 import ReleaseCards from "@/widgets/release-cards/ui/index.vue";
-import Petitions from "@/widgets/petition/ui/index.vue";
 import TitleCard from "@/widgets/title-card/ui/index.vue";
 import NewReleases from "@/widgets/new-releases/ui/index.vue";
-
 
 </script>
 
