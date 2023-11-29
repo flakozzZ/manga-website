@@ -44,11 +44,8 @@ export default {
 
 
 <script setup lang="ts">
-import AButton from "@/shared/ui/button/index.vue";
-import Icon from "@/shared/ui/icon/index.vue";
 import {ref} from "vue";
 
-const favorite = ref<boolean>(true)
 
 
 interface Props {
@@ -62,7 +59,7 @@ interface Props {
   viewer: string,
 }
 
-const props = withDefaults(defineProps<Props>(), {})
+withDefaults(defineProps<Props>(), {})
 
 
 </script>
