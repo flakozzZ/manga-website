@@ -21,6 +21,7 @@ export default {
 <script setup lang="ts">
 import Image from "@/shared/ui/image/image.vue";
 
+
 const backgroundImage = new URL('@/shared/assets/img/background.png', import.meta.url)
 const foregroundImage = new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url)
 </script>

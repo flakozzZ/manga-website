@@ -6,14 +6,14 @@ export default {
 
 
 <template>
-  <div class="card">
+  <div class="gap-5 flex flex-row overflow-x-auto overflow-y-hidden scrollbar-hidden" >
     <template v-for="card in cards" :key="card.key">
-      <div class="card__item">
+      <div class="w-120 flex flex-col flex-wrap">
         <slot :name="card.key">
-          <img class="card__img" :src="card.url" alt="title">
+          <img class="max-w-120 h-180" :src="card.url" alt="title">
         </slot>
         <slot :name="card.key">
-          <span class="card__title">{{ card.label }}</span>
+          <span class="font-nunito font-medium text-sm">{{ card.label }}</span>
         </slot>
       </div>
     </template>
@@ -36,6 +36,4 @@ withDefaults(defineProps<Props>(), {})
 </script>
 
 <style scoped src="./index.scss">
-
-
 </style>

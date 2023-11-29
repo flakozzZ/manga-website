@@ -5,15 +5,14 @@ export default {
 
 </script>
 <template>
-  <div class="main">
-    <main-image/>
-    <div class="main__block">
-      <release-cards/>
-      <petitions class="main__petition" />
-    </div>
+  <div class="w-full main mx-auto p-2">
+    <!--    <main-image/>-->
+    <release-cards/>
+    <!--      <petitions class="main__petition" />-->
     <title-card />
     <new-releases />
   </div>
+
 
 </template>
 
@@ -28,18 +27,7 @@ import NewReleases from "@/widgets/new-releases/ui/index.vue";
 </script>
 
 <style scoped lang="scss">
-.main {
-  width: 100%;
-  max-width: 1250px;
-  margin: 0 auto;
-  &__block {
-    display: flex;
-    justify-content: space-between;
+  .main {
+    max-width: 1250px;
   }
-  &__petition {
-    margin-right: 40px;
-  }
-
-
-}
 </style>
