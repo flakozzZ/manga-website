@@ -21,10 +21,12 @@ export default {
             colors: {
                 'manga-1': '#1C274C',
                 'manga-bg': '#E2E8FA',
+                'manga-2': '#1C274C80'
 
 
 },
             width: {
+                '34': '34px',
                 '120': '120px',
                 '556': '556px',
                 '1250': '1250px',
@@ -45,7 +47,8 @@ export default {
                 'exo': ['Exo', 'sans-serif'],
                 'exo-2': ['Exo 2', 'sans-serif'],
                 'public-sans': ['Public Sans', 'sans-serif'],
-                'nunito': ['Nunito', 'sans-serif']
+                'nunito': ['Nunito', 'sans-serif'],
+                'red-rose': ['Red Rose', 'serif']
             },
         },
     },
