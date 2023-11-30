@@ -5,7 +5,10 @@ export default {
 </script>
 
 <template>
-    <cards :cards="card"/>
+    <div class="flex flex-col">
+      <div class="font-base font-bold font-exo-2 mt-8 mb-6">Ближайшие релизы</div>
+      <cards :cards="card"/>
+    </div>
 </template>
 
 <script setup lang="ts">

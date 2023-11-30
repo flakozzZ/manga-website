@@ -27,8 +27,13 @@ const bgSize = ref<string | null>(null)
 const handleResize = () => {
   if(window.innerWidth < 365) {
     bgSize.value = new URL('@/shared/assets/img/smallBg.png', import.meta.url).href
-  } else {
+  }
+  else if(window.innerWidth < 1250) {
     bgSize.value = new URL('@/shared/assets/img/secondBackground.png', import.meta.url).href
+
+  }
+  else {
+    bgSize.value = new URL('@/shared/assets/img/background.png', import.meta.url).href
   }
 }
 
