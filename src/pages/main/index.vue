@@ -5,8 +5,9 @@ export default {
 
 </script>
 <template>
+  <main-image />
+
   <div class="w-full main mx-auto p-2">
-    <!--    <main-image/>-->
     <release-cards/>
     <!--      <petitions class="main__petition" />-->
     <title-card />
@@ -20,6 +21,7 @@ export default {
 import ReleaseCards from "@/widgets/release-cards/ui/index.vue";
 import TitleCard from "@/widgets/title-card/ui/index.vue";
 import NewReleases from "@/widgets/new-releases/ui/index.vue";
+import MainImage from "@/widgets/main-image/ui/index.vue";
 
 </script>
 

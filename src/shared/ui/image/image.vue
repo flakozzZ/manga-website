@@ -41,7 +41,11 @@ export default {
 <!--  </div>-->
 <!--</template>-->
 
-
+<template>
+  <div class="w-full overflow-hidden">
+    <img class="max-w-fit h-auto mx-auto" :src="props.background" alt="background">
+  </div>
+</template>
 
 <script setup lang="ts">
 
@@ -58,7 +62,7 @@ interface Props {
   viewer: string,
 }
 
-withDefaults(defineProps<Props>(), {})
+const props = withDefaults(defineProps<Props>(), {})
 
 
 </script>
