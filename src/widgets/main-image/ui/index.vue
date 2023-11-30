@@ -8,7 +8,7 @@ export default {
       ru-name="Магическая битва"
       :background="bgSize"
       en-name="Jujutsu Kaisen"
-      :foreground="foregroundImage"
+      :foreground="frSize "
       read="32.2k"
       likes="132.2k"
       favorites="9.3(12.2k)"
@@ -23,6 +23,7 @@ import {onBeforeUnmount, onMounted, ref} from "vue";
 
 
 const bgSize = ref<string | null>(null)
+const frSize = ref<string | null>(null)
 
 const handleResize = () => {
   if(window.innerWidth < 365) {
@@ -30,10 +31,13 @@ const handleResize = () => {
   }
   else if(window.innerWidth < 1250) {
     bgSize.value = new URL('@/shared/assets/img/secondBackground.png', import.meta.url).href
+    frSize.value = new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url).href
 
   }
   else {
     bgSize.value = new URL('@/shared/assets/img/background.png', import.meta.url).href
+    frSize.value = new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url).href
+
   }
 }
 

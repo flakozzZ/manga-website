@@ -40,16 +40,16 @@ export default {
 <!--    </div>-->
 <!--  </div>-->
 <!--</template>-->
-
 <template>
-  <div class="w-full overflow-hidden">
+  <div class="w-full overflow-hidden relative flex">
     <img class="max-w-fit h-auto mx-auto" :src="props.background" alt="background">
+    <div class="absolute">
+      <img class="max-w-full h-auto" :src="props.foreground" alt="foreground">
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
-
 
 interface Props {
   background: any,

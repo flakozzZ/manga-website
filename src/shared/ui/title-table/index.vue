@@ -40,7 +40,7 @@ export default {
 
 
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:w-full maw-w-1250 justify-center mx-auto">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:w-full maw-w-1250 justify-center mx-auto">
     <template v-for="item in table" :key="item.key">
       <div class="bg-manga-bg flex font-nunito gap-2 items-center p-2.5">
         <img class="max-w-52 h-80" :src="item.url" alt="Icon">
@@ -49,7 +49,7 @@ export default {
           <div class="flex gap-x-1 text-sm my-1">
             <p class="font-medium">{{ item.tome }}</p>
             <p class="font-medium">{{ item.chapter }}</p>
-            <p class="font-semibold hidden sm:hidden md:block lg:block">{{ item.name }}</p>
+            <p class="font-semibold hidden sm:hidden md:hidden lg:block">{{ item.name }}</p>
           </div>
           <div class="flex justify-between gap-1 items-center text-xs">
             <div class="flex gap-1 items-center">
