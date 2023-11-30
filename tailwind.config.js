@@ -5,6 +5,9 @@ export default {
     ],
     theme: {
         extend: {
+            screens: {
+                'xs': '365px',
+            },
             maxWidth: {
                 '120': '120px',
                 '52': '52px',

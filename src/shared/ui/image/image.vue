@@ -43,13 +43,14 @@ export default {
 <template>
   <div class="w-full overflow-hidden relative flex">
     <img class="max-w-fit h-auto mx-auto" :src="props.background" alt="background">
-    <div class="absolute">
-      <img class="max-w-full h-auto" :src="props.foreground" alt="foreground">
-    </div>
+<!--    <div class="absolute left-335 bottom-20 ">-->
+<!--      <img class="hidden xs:inline-block sm:inline-block md:inline-block lg:inline-block" :src="props.foreground" alt="foreground">-->
+<!--    </div>-->
   </div>
 </template>
 
 <script setup lang="ts">
+
 
 interface Props {
   background: any,
@@ -63,6 +64,8 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {})
+
+
 
 
 </script>
