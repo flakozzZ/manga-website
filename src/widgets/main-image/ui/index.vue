@@ -51,7 +51,6 @@ onBeforeUnmount(() => {
   handleResize()
 })
 
-const foregroundImage = new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url);
 
 
 </script>
