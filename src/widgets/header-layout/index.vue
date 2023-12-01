@@ -13,15 +13,15 @@ export default {
         </div>
         <div class="flex items-center gap-2">
           <Icon name="logobar"/>
-          <div class="uppercase text-white text-xl font-red-rose">KOMIKKU</div>
+          <div class="uppercase text-white text-xl font-red-rose hidden xs:hidden md:block lg:block">KOMIKKU</div>
         </div>
-        <div class="mx-2">
+        <div class="mx-2 hidden xs:hidden md:block lg:block">
           <Icon class="cursor-pointer" name="random"/>
         </div>
       </div>
 
       <div class="flex items-center gap-2">
-        <div class="w-96">
+        <div class="w-96 hidden xs:hidden md:block lg:block">
           <a-input placeholder="Айзек, что будем искать?" type="text" icon="searchbar"/>
         </div>
         <img src="@/shared/assets/img/user.png" alt="user">
