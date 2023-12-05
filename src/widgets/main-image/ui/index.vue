@@ -8,7 +8,7 @@ export default {
       ru-name="Магическая битва"
       :background="bgSize"
       en-name="Jujutsu Kaisen"
-      foreground= ""
+      foreground=""
       read="32.2k"
       likes="132.2k"
       favorites="9.3(12.2k)"
@@ -23,7 +23,6 @@ import {onBeforeUnmount, onMounted, ref} from "vue";
 
 
 const bgSize = ref<string | null>(null)
-const frSize = ref<string | null>(null)
 
 const handleResize = () => {
   if(window.innerWidth < 365) {
