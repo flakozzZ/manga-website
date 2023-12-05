@@ -40,7 +40,7 @@ export default {
 
 
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:w-full maw-w-1250 justify-center mx-auto">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:w-full max-w-1250 justify-center mx-auto">
     <template v-for="item in table" :key="item.key">
       <div class="bg-manga-bg flex font-nunito gap-2 items-center p-2.5">
         <img class="max-w-52 h-80" :src="item.url" alt="Icon">

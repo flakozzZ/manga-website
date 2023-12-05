@@ -12,6 +12,7 @@ export default {
     <!--      <petitions class="main__petition" />-->
     <title-card />
     <new-releases />
+
   </div>
 
 
@@ -22,6 +23,7 @@ import ReleaseCards from "@/widgets/release-cards/ui/index.vue";
 import TitleCard from "@/widgets/title-card/ui/index.vue";
 import NewReleases from "@/widgets/new-releases/ui/index.vue";
 import MainImage from "@/widgets/main-image/ui/index.vue";
+import SidePanel from "@/shared/ui/side-panel/index.vue";
 
 </script>
 

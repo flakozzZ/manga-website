@@ -13,12 +13,17 @@
     font-size: 14px;
     font-weight: 600;
     outline: none;
-    &::placeholder{
+
+    &--bgcolor {
+      background: #1C274C80;
+      border: 1px solid #1C274C80;
+    }
+
+    &::placeholder {
       font-family: 'Nunito', sans-serif;
       font-size: 14px;
       font-weight: 600;
-      color: #1C274C80;
-
+      color: #E2E8FA;
     }
 
   }
@@ -26,9 +31,10 @@
   &__icon {
     position: absolute;
     top: 50%;
-    left: 10px; /* Регулируйте отступ иконки слева */
+    left: 10px;
     transform: translateY(-40%);
-    pointer-events: none; /* Чтобы иконка не мешала взаимодействию с input */
+    pointer-events: none;
+    color: #E2E8FA;
 
   }
 }

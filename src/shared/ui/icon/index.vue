@@ -8,7 +8,6 @@ export default {
 </template>
 
 <script setup lang="ts">
-// import {createSvgMap} from "@/shared/ui/icon/index.ts";
 import {createSvgMap} from "@/shared/ui/icon/index.ts";
 import {computed, h} from "vue";
 

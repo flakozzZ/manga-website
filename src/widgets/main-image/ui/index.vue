@@ -8,7 +8,7 @@ export default {
       ru-name="Магическая битва"
       :background="bgSize"
       en-name="Jujutsu Kaisen"
-      :foreground="frSize "
+      foreground= ""
       read="32.2k"
       likes="132.2k"
       favorites="9.3(12.2k)"
@@ -31,15 +31,14 @@ const handleResize = () => {
   }
   else if(window.innerWidth < 1250) {
     bgSize.value = new URL('@/shared/assets/img/secondBackground.png', import.meta.url).href
-    frSize.value = new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url).href
 
   }
   else {
     bgSize.value = new URL('@/shared/assets/img/background.png', import.meta.url).href
-    frSize.value = new URL('@/shared/assets/img/jujutsukaisen.png', import.meta.url).href
 
   }
 }
+
 
 onMounted(() => {
   window.addEventListener('resize', handleResize)

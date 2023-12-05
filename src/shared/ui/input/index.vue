@@ -10,6 +10,9 @@ export default {
         :type="inputType"
         :value="modelValue"
         class="field__input"
+        :class="[
+            `field__input--${props.bgColor}`
+        ]"
         :disabled="disabled"
         autocomplete="new-password"
         :placeholder="placeholder"
@@ -26,6 +29,7 @@ export default {
 
   interface Props {
     type: 'text' | 'password' | 'email' | 'url'
+    bgColor?: string
     placeholder: string
     modelValue?: string | number
     disabled?: boolean
