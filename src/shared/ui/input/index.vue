@@ -16,6 +16,9 @@ export default {
         :disabled="disabled"
         autocomplete="new-password"
         :placeholder="placeholder"
+        :style="{
+          color: props.placeholderColor,
+        }"
     />
   <div class="field__icon">
     <icon :name="props.icon" class="icon" />
@@ -31,6 +34,7 @@ export default {
     type: 'text' | 'password' | 'email' | 'url'
     bgColor?: string
     placeholder: string
+    placeholderColor?: string
     modelValue?: string | number
     disabled?: boolean
     autocomplete?: boolean
